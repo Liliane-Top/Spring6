@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Objects;
+import java.util.HashSet;
 import java.util.Set;
 @Getter
 @Setter
@@ -41,4 +42,5 @@ public class Author {
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
     }
+    private Set<Book> books = new HashSet<>();
 }
