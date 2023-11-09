@@ -42,5 +42,4 @@ public class Author {
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
     }
-    private Set<Book> books = new HashSet<>();
 }
